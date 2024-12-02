@@ -18,7 +18,7 @@ I made this code with the intention of using my Python and SQL knowledge onto a 
 
 ## Installation
 ### Prerequisites
-Download and install Python 3.x from [the official website](https://www.python.org/downloads/)
+Download and install Python 3.x from [the official website](https://www.python.org/downloads/).
 
 ## Usage
 1. Clone the repository.
@@ -28,7 +28,7 @@ Download and install Python 3.x from [the official website](https://www.python.o
 5. Use the expense tracker as per the options and instructions available in the program.
 
 ## License
-The project is licensed under the MIT license - see the [LICENSE](https://github.com/adarshram-nair/personal-expense-tracker-python-sql/blob/main/LICENSE) file for details
+The project is licensed under the MIT license - see the [LICENSE](https://github.com/adarshram-nair/personal-expense-tracker-python-sql/blob/main/LICENSE) file for details.
 
 ## Contact Information
 Adarshram Nair, Email - nair.adarshram@gmail.com
