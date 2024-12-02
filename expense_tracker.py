@@ -8,6 +8,8 @@ def new_database():
 
 def view_expenses(table = 'expenses'):
 
+    rows = []
+
     if table == 'expenses':
         year, month = year_month()
         category, con = expense_categories_output()
@@ -22,10 +24,7 @@ def view_expenses(table = 'expenses'):
                                   (category, category, year, year, month, month))
         rows = tracker_db_cursor.fetchall()
 
-        for i in rows:
-            print(i)
-
-    if table == 'deleted':
+    elif table == 'deleted':
         tracker_db_cursor.execute("SELECT * from expense_tracker_deleted "
                                   "ORDER BY TransID")
         rows = tracker_db_cursor.fetchall()
@@ -34,8 +33,9 @@ def view_expenses(table = 'expenses'):
             print('No transactions Found')
             return None
 
-        for i in rows:
-            print(i)
+    print(('Transaction ID', 'Amount (INR)', 'Category', 'Date', 'Description'))
+    for i in rows:
+        print(i)
 
 def date_input():
     while True:
@@ -66,7 +66,7 @@ def insert_expense():
         del max_del
 
         id = curr_trans_id + 1
-        amount = input('Amount: ')
+        amount = input('Amount (INR): ')
         category = expense_categories_input()
         date = date_input()
         description = input('Description: ')
