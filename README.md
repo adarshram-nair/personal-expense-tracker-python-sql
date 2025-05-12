@@ -27,6 +27,20 @@ Download and install Python 3.x from [the official website](https://www.python.o
 4. Run the python script `python expense_tracker.py` or `py expense_tracker.py`.
 5. Use the expense tracker as per the options and instructions available in the program.
 
+  ### Screenshots
+
+   - [Main Menu](screenshots/0_main_menu.png)
+   
+   - [1. Add new expenses](screenshots/1_new_expense.png)
+  
+   - [2. View expenses](screenshots/2_view_expenses.png)
+
+   - [3. View expense summary](screenshots/3_expense_summary.png)
+
+   - [4. Delete expenses](screenshots/4_delete_expense.png)
+
+   - [5. View deleted expenses](screenshots/5_view_deleted_expenses.png)
+
 ## License
 The project is licensed under the MIT license - see the [LICENSE](https://github.com/adarshram-nair/personal-expense-tracker-python-sql/blob/main/LICENSE) file for details.
 
