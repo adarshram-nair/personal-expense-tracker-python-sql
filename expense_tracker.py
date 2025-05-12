@@ -402,9 +402,9 @@ def delete_transaction():
         else:
             tracker_db_cursor.execute("INSERT INTO expense_tracker_deleted "
                                   "SELECT * FROM expense_tracker WHERE TransId = ?",
-                                  trans_id_input)
+                                  (trans_id_input,))
             tracker_db_cursor.execute('DELETE FROM expense_tracker WHERE TransId = ?',
-                                      (trans_id_input))
+                                      (trans_id_input,))
             print('Deleted')
             tracker_db_conn.commit()
             continue
